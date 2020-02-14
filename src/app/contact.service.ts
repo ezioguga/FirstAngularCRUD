@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Contact } from './contact';
 import { Observable } from 'rxjs';
 
@@ -12,7 +12,7 @@ export class ContactService {
   private _user: Contact;
   private baseUrl = 'http://localhost:3000/api';
 
-  constructor(private _http: HttpClient, private header: HttpHeaders) {
+  constructor(private _http: HttpClient) {
   }
 
   // retrieving ContactServices
